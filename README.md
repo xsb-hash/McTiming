@@ -1,6 +1,6 @@
 # McTiming 麦麦时机官
 
-![McTiming麦麦时机官：智能套餐推荐](E:\downloads\McTiming麦麦时机官：智能套餐推荐.png)
+![McTiming 麦麦时机官封面](./public/showcase/advertising.png)
 
 
 
@@ -27,13 +27,13 @@
 
 项目已有4张展示截图，位于 `public/showcase/`；
 
-体验路径：![checkout](E:\McDonald1\public\showcase\checkout.png)
+体验路径：![McTiming 麦麦时机官首页](./public/showcase/home.png)
 
-![home](E:\McDonald1\public\showcase\home.png)
+![McTiming 麦麦时机官口味](./public/showcase/preferences.png)
 
-![preferences](E:\McDonald1\public\showcase\preferences.png)
+![McTiming 麦麦时机官推荐](./public/showcase/recommendations.png)
 
-![recommendations](E:\McDonald1\public\showcase\recommendations.png)
+![McTiming 麦麦时机官结算](./public/showcase/checkout.png)
 
 开始推荐 → 选择样例门店 → 设置预算与口味 → 比较搭配 → 核对 → 明确确认模拟订单。也可以修改条件或选择本次不购买。
 
