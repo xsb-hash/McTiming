@@ -1,0 +1,1187 @@
+{
+  "source": "actual local controlled test executions; no official business calls",
+  "generatedAt": "2026-10-14T07:58:33.871Z",
+  "vitest": {
+    "total": 161,
+    "passed": 161,
+    "failed": 0,
+    "pending": 0,
+    "files": 11
+  },
+  "playwright": {
+    "startTime": "2026-10-14T07:57:35.322Z",
+    "duration": 15836.059000000001,
+    "expected": 19,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  },
+  "groups": [
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "total": 25,
+      "passed": 25
+    },
+    {
+      "runner": "Vitest",
+      "file": "cli.test.ts",
+      "total": 2,
+      "passed": 2
+    },
+    {
+      "runner": "Vitest",
+      "file": "config.test.ts",
+      "total": 8,
+      "passed": 8
+    },
+    {
+      "runner": "Vitest",
+      "file": "evidence.test.ts",
+      "total": 3,
+      "passed": 3
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "total": 38,
+      "passed": 38
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "total": 14,
+      "passed": 14
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "total": 21,
+      "passed": 21
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "total": 29,
+      "passed": 29
+    },
+    {
+      "runner": "Vitest",
+      "file": "system-resilience.test.ts",
+      "total": 7,
+      "passed": 7
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow-runtime.test.ts",
+      "total": 5,
+      "passed": 5
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow.test.ts",
+      "total": 9,
+      "passed": 9
+    },
+    {
+      "runner": "Playwright",
+      "file": "checkout.spec.ts",
+      "total": 7,
+      "passed": 7
+    },
+    {
+      "runner": "Playwright",
+      "file": "resilience.spec.ts",
+      "total": 2,
+      "passed": 2
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "total": 10,
+      "passed": 10
+    }
+  ],
+  "checks": [
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) requires explicit confirmation and rejects client prices or item substitutions",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) creates once, returns the same simulated ID on repeats and queries without creating",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) locks rechecking and creating on the server across concurrent submissions",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) requires a new explicit confirmation and version after price changes",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) requires reconfirmation even when fees change but the total stays equal",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) invalidates changed store bindings and requires a new recommendation",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) invalidates changed address bindings and requires a new recommendation",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) invalidates changed items bindings and requires a new recommendation",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) invalidates changed specification bindings and requires a new recommendation",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) invalidates changed quantity bindings and requires a new recommendation",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) invalidates changed fulfillment bindings and requires a new recommendation",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) rejects stale versions and a session/restart without the original draft",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) expires session drafts and quote deadlines before creation",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) cancels before creation and discards late recheck results without corrupting a new draft",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) keeps failure terminal and never automatically resends",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) keeps timeout terminal and never automatically resends",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) treats a transport exception or malformed creation response as unknown, without logging raw errors",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) requires explicit fictional delivery address confirmation and includes complete demo fees",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) blocks unavailable stores and unavailable item configurations",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) rejects expired coupons before price recheck",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) rejects inapplicable coupons before price recheck",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) blocks recheck failure and incomplete prices without inventing zero fees",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "server checkout state machine (controlled data only) never exposes a real payment URL from a malformed demo response",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "offline real MCP boundary — no network matches saved order/address/query input schemas without invented idempotency or amount keys",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "checkout.test.ts",
+      "name": "offline real MCP boundary — no network blocks live creation even with a controlled complete quote and an injected adapter",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "cli.test.ts",
+      "name": "the actual CLI safely exits when the token is missing",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "cli.test.ts",
+      "name": "the actual CLI refuses a write tool without touching credentials",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "config.test.ts",
+      "name": "configuration isolation defaults to demo without a token",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "config.test.ts",
+      "name": "configuration isolation normalizes real to live but does not invent a token",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "config.test.ts",
+      "name": "configuration isolation rejects unsafe configuration without echoing its value",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "config.test.ts",
+      "name": "configuration isolation rejects unsafe configuration without echoing its value",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "config.test.ts",
+      "name": "configuration isolation rejects unsafe configuration without echoing its value",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "config.test.ts",
+      "name": "configuration isolation rejects unsafe configuration without echoing its value",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "config.test.ts",
+      "name": "configuration isolation loads .env.local explicitly with inherited values taking precedence",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "config.test.ts",
+      "name": "configuration isolation only returns a public status, never the live token or an invented success",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "evidence.test.ts",
+      "name": "stage 2 evidence projection (synthetic data, no real network) retains an empty-address success without copying personal or free-text values",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "evidence.test.ts",
+      "name": "stage 2 evidence projection (synthetic data, no real network) does not infer missing fees as zero and only retains safe integers",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "evidence.test.ts",
+      "name": "stage 2 evidence projection (synthetic data, no real network) distinguishes business failure from absent structured data",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics uses a fixed clock, explicit sources and complete shared configuration range",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 0 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 1 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 2 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 3 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 4 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 5 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 6 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 7 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 8 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 9 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 10 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 11 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 12 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 13 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 14 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 15 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 16 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 17 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 18 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 19 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 20 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 21 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 22 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 23 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 24 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 25 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 26 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 27 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 28 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 29 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 30 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics audits all methods for fixed case 31 without omitting empty results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics calibrates the auditor with deliberately invalid prices, budgets and exclusions",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics detects unavailable menu data independently of the generator",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics keeps zero-output cases in denominators and no-likes cases as null",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics uses the held-coupon configuration quote, rejects unverified coupon prices",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "experiments.test.ts",
+      "name": "controlled comparison protocol and metrics verifies out-of-order and invalidation lifecycle without networking",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only maps verified role labels and default round/modification selections to the actual input Schema",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only does not claim official purchasability even when all declared fee fields are returned",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only rejects invalid or missing official fen: undefined",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only rejects invalid or missing official fen: null",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only rejects invalid or missing official fen: 3450",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only rejects invalid or missing official fen: 34.5",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only rejects invalid or missing official fen: -1",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only rejects invalid or missing official fen: 9007199254740992",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only never invents ingredient exclusions from menu names or customization lists",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only blocks unverified delivery without any calls and refuses demo mode",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only does not map missing rounds to a complete single item",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only fails safely on a remote business error without propagating raw text",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only refuses a forged or cross-store product configuration before pricing",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "mcd-adapter.test.ts",
+      "name": "MCP adapter: controlled protocol fixtures only rejects unsupported detail fields and invalid default quantities",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) exposes discovered schemas and response to a local observer without changing public summary",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) rejects non-network-ready configuration",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) rejects non-network-ready configuration",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) blocks delivery-create-address before connection",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) blocks create-order before connection",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) blocks auto-bind-coupons before connection",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) blocks cancel-order before connection",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) blocks pay before connection",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) blocks draw-lottery before connection",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) blocks unknown before connection",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) uses the installed SDK to initialize and discover tools without calling any",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) validates against the discovered schema and discards all business response content",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) rejects arguments that do not match discovery before tools/call",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) does not assume a whitelisted tool is present on the server",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) reports HTTP 401 safely",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) reports HTTP 403 safely",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) reports HTTP 429 safely",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) reports HTTP 503 safely",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) distinguishes network failure without returning the raw error",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) rejects malformed MCP responses",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "probe.test.ts",
+      "name": "read-only MCP probe (no real network) does not report a tool execution error as success",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures includes a quote exactly on budget and never marks demo as purchasable",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures without likes sorts by final quote, not menu hint",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures counts distinct fully satisfied likes once and prioritizes them over price",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures explains partially satisfied likes",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures hard exclusions beat preferences in both budget groups",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures rejects excluded items hidden inside a bundle",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures does not price unknown-role",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures does not price unknown-exclusion",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures does not price unknown-composition",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures does not price unavailable",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures shows one over-budget option and a limited-scope message when none fit",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures requires strictly better preference for an over-budget alternative when a budget option exists",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures reports no legal combinations without calling price",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures same preference sorts by price then stable ID, independent of menu order",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures filters expired, inapplicable, unowned, unverified and wrong-context coupons",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures reports all price failures without a zero-price fallback",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures keeps valid recommendations when only some candidates fail pricing",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures does not rank an unknown quote",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures does not rank an wrong-binding quote",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures does not rank an wrong-source quote",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures supports verified official quotes only as a controlled future-contract fixture",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures requires a snack when selected and deduplicates full product configurations",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures caps quotes at 12 while retaining cheap and high-preference alternatives",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures rejects malformed budgets, missing delivery refs and mixed data sources",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "single-meal recommendation with controlled fixtures runs fictional delivery including explicitly fictional delivery fees",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "quote binding and request ordering binds store, fulfillment, address, configuration, quantity, coupon and preferences",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "quote binding and request ordering expires old results immediately on new input and on quote expiry",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "quote binding and request ordering discards a previous request that finishes after the latest one",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "recommend.test.ts",
+      "name": "quote binding and request ordering enforces at most two concurrent price calls across overlapping requests",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "system-resilience.test.ts",
+      "name": "controlled system fault injection — never official end-to-end blocks empty menu data and revokes previous recommendations",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "system-resilience.test.ts",
+      "name": "controlled system fault injection — never official end-to-end blocks timeout menu data and revokes previous recommendations",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "system-resilience.test.ts",
+      "name": "controlled system fault injection — never official end-to-end blocks 401 menu data and revokes previous recommendations",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "system-resilience.test.ts",
+      "name": "controlled system fault injection — never official end-to-end blocks 429 menu data and revokes previous recommendations",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "system-resilience.test.ts",
+      "name": "controlled system fault injection — never official end-to-end blocks malformed menu data and revokes previous recommendations",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "system-resilience.test.ts",
+      "name": "controlled system fault injection — never official end-to-end invalid template cannot preserve an earlier ready quote",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "system-resilience.test.ts",
+      "name": "controlled system fault injection — never official end-to-end simulates transport timeout, sanitizes errors and never writes private data to logs",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow-runtime.test.ts",
+      "name": "server mode and local request boundaries rejects cross-origin or non-loopback live requests",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow-runtime.test.ts",
+      "name": "server mode and local request boundaries runs the whole demo without invoking MCP and isolates browser sessions",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow-runtime.test.ts",
+      "name": "server mode and local request boundaries expires the old server session instead of reusing its draft",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow-runtime.test.ts",
+      "name": "server mode and local request boundaries missing live credentials fails without connecting or falling back",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow-runtime.test.ts",
+      "name": "server mode and local request boundaries accepts only verified store envelopes and projects no trace or extra fields",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow.test.ts",
+      "name": "web workflow and server review drafts converts exact decimal budgets and rejects malformed/conflicting input",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow.test.ts",
+      "name": "web workflow and server review drafts projects opaque choices, reuses engine ranking and prepares memory-only review",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow.test.ts",
+      "name": "web workflow and server review drafts changing conditions invalidates server quotes and drafts, including earlier requests",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow.test.ts",
+      "name": "web workflow and server review drafts cannot reuse another session's choice or an unqueried store",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow.test.ts",
+      "name": "web workflow and server review drafts demo delivery includes fictional delivery fees and cannot save an address",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow.test.ts",
+      "name": "web workflow and server review drafts keeps empty results on refresh and lets the user decline",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow.test.ts",
+      "name": "web workflow and server review drafts discards delayed old recommendations without replacing newer results",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow.test.ts",
+      "name": "web workflow and server review drafts blocks live delivery before any store calls",
+      "status": "passed"
+    },
+    {
+      "runner": "Vitest",
+      "file": "workflow.test.ts",
+      "name": "web workflow and server review drafts never exposes an incomplete official quote as a reviewable amount",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "checkout.spec.ts",
+      "name": "explicit demo confirmation, duplicate API submissions, status refresh and no payment links",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "checkout.spec.ts",
+      "name": "changed quotation requires a new version and a second explicit confirmation",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "checkout.spec.ts",
+      "name": "failure and unknown are distinct; unknown cannot be retried or erased by new conditions",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "checkout.spec.ts",
+      "name": "mobile delivery explicitly confirms fictional address and complete sample fees",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "checkout.spec.ts",
+      "name": "canceling an unsubmitted operation invalidates its server draft",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "checkout.spec.ts",
+      "name": "API rejects client amounts, absent consent, foreign origins, foreign sessions and missing live quotes",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "checkout.spec.ts",
+      "name": "store changes invalidate checkout IDs on the server, not only in the browser",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "resilience.spec.ts",
+      "name": "controlled browser API faults never become recommendations or orders",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "resilience.spec.ts",
+      "name": "malformed inputs and oversized bodies are rejected before draft creation",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "name": "home, pickup, independent over-budget option, review and decline; desktop screenshots",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "name": "delivery demo, full fictional fees and mobile screenshots",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "name": "budget validation and preference conflicts",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "name": "likes outrank cheaper food and exclusion applies to all displayed options",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "name": "no budget fit gives limited-search message and a separate alternative",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "name": "store change revokes old quotes and server draft",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "name": "late browser response cannot restore a previous condition version",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "name": "live missing credentials fails explicitly, delivery and real ordering stay blocked",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "name": "canary never reaches live HTML or browser JS; no automatic MCP call",
+      "status": "passed"
+    },
+    {
+      "runner": "Playwright",
+      "file": "workflow.spec.ts",
+      "name": "API rejects cross-site access and unsupported transaction actions",
+      "status": "passed"
+    }
+  ]
+}

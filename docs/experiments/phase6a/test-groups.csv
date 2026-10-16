@@ -1,0 +1,15 @@
+runner,file,total,passed
+Vitest,checkout.test.ts,25,25
+Vitest,cli.test.ts,2,2
+Vitest,config.test.ts,8,8
+Vitest,evidence.test.ts,3,3
+Vitest,experiments.test.ts,38,38
+Vitest,mcd-adapter.test.ts,14,14
+Vitest,probe.test.ts,21,21
+Vitest,recommend.test.ts,29,29
+Vitest,system-resilience.test.ts,7,7
+Vitest,workflow-runtime.test.ts,5,5
+Vitest,workflow.test.ts,9,9
+Playwright,checkout.spec.ts,7,7
+Playwright,resilience.spec.ts,2,2
+Playwright,workflow.spec.ts,10,10

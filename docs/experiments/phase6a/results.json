@@ -1,0 +1,4133 @@
+{
+  "datasetHash": "31bf613a2572af794c52181375333ee7750048f7ebf653bc5c28864c5e5d2604",
+  "resultsHash": "750b5d0a3add263ede27d0ca1ec57cabf78e1f544ab4070096a92d9750f8ed5e",
+  "rows": [
+    {
+      "caseId": "budget-1500",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 1500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "all-trusted-options-over-budget",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-1500",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 1500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "all-trusted-options-over-budget",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-1500",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 1500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 1,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 1,
+      "verifiableCount": 1,
+      "noResultReason": "all-trusted-options-over-budget",
+      "defaults": [],
+      "overBudget": {
+        "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+        "amountFen": 2600,
+        "overBudgetFen": 1100
+      }
+    },
+    {
+      "caseId": "budget-2100",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 2100,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 1,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 1,
+      "verifiableCount": 1,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-2100",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 2100,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 1,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 1,
+      "verifiableCount": 1,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-2100",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 2100,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 1,
+      "overCount": 1,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": {
+        "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+        "amountFen": 2600,
+        "overBudgetFen": 500
+      }
+    },
+    {
+      "caseId": "budget-2300",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 2300,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-2300",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 2300,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-2300",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 2300,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 2,
+      "overCount": 1,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": {
+        "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+        "amountFen": 2600,
+        "overBudgetFen": 300
+      }
+    },
+    {
+      "caseId": "budget-2600",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 2600,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-2600",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 2600,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-2600",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 2600,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-3000",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-3000",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-3000",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-3500",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-3500",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "budget-3500",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "chicken-preference",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 1,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "chicken"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [
+            "chicken"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "chicken-preference",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 1,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "chicken"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [
+            "chicken"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "chicken-preference",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 1,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "chicken"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [
+            "chicken"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "no-preferences",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 0,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": null,
+      "averageMatch": null,
+      "top3Coverage": null,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "no-preferences",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 0,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": null,
+      "averageMatch": null,
+      "top3Coverage": null,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "no-preferences",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 0,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": null,
+      "averageMatch": null,
+      "top3Coverage": null,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "multiple-preferences",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0,
+      "averageMatch": 0.3333333333333333,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [
+            "fruit"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "multiple-preferences",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0,
+      "averageMatch": 0.3333333333333333,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [
+            "fruit"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "multiple-preferences",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2800,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef",
+            "fruit"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [
+            "fruit"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "exclude-chicken",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "exclude-chicken",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "exclude-chicken",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "bundle-exclusion",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "bundle-exclusion",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "bundle-exclusion",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "bundle-allowed",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 5,
+      "eligibleQuoteCount": 5,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2000,
+      "top1Match": 0,
+      "averageMatch": 0.16666666666666666,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"bundle\",\"quantity\":1,\"rounds\":[{\"choices\":[{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1}],\"roundRef\":\"drink\"},{\"choices\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1}],\"roundRef\":\"main\"}]}]}",
+          "amountFen": 2000,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "bundle-allowed",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 5,
+      "eligibleQuoteCount": 5,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2000,
+      "top1Match": 0,
+      "averageMatch": 0.16666666666666666,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"bundle\",\"quantity\":1,\"rounds\":[{\"choices\":[{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1}],\"roundRef\":\"drink\"},{\"choices\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1}],\"roundRef\":\"main\"}]}]}",
+          "amountFen": 2000,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "bundle-allowed",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 5,
+      "eligibleQuoteCount": 5,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "exact-budget",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 2100,
+      "likedCount": 0,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 1,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": null,
+      "averageMatch": null,
+      "top3Coverage": null,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 1,
+      "verifiableCount": 1,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "exact-budget",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 2100,
+      "likedCount": 0,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 1,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": null,
+      "averageMatch": null,
+      "top3Coverage": null,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 1,
+      "verifiableCount": 1,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "exact-budget",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 2100,
+      "likedCount": 0,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 1,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": null,
+      "averageMatch": null,
+      "top3Coverage": null,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 1,
+      "verifiableCount": 1,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "all-over-budget",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 1000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "all-trusted-options-over-budget",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "all-over-budget",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 1000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "all-trusted-options-over-budget",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "all-over-budget",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 1000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 1,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 1,
+      "verifiableCount": 1,
+      "noResultReason": "all-trusted-options-over-budget",
+      "defaults": [],
+      "overBudget": {
+        "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+        "amountFen": 2600,
+        "overBudgetFen": 1600
+      }
+    },
+    {
+      "caseId": "no-valid",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 0,
+      "eligibleQuoteCount": 0,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "no-legal-candidates",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "no-valid",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 0,
+      "eligibleQuoteCount": 0,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "no-legal-candidates",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "no-valid",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 0,
+      "eligibleQuoteCount": 0,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "no-legal-candidates",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "held-coupon",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 2500,
+      "likedCount": 2,
+      "candidateCount": 6,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [
+            "fruit"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "held-coupon",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 2500,
+      "likedCount": 2,
+      "candidateCount": 6,
+      "eligibleQuoteCount": 6,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0,
+      "averageMatch": 0.3333333333333333,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":{\"applicable\":true,\"code\":\"held-fixture\",\"contextKey\":\"{\\\"fulfillment\\\":\\\"pickup\\\",\\\"mode\\\":\\\"demo\\\",\\\"needTableware\\\":false,\\\"revision\\\":1,\\\"storeRef\\\":\\\"controlled-store\\\",\\\"takeWay\\\":\\\"take-in-store\\\"}\",\"owned\":true,\"productRefs\":[\"beef\"],\"ref\":\"held\",\"source\":\"demo\",\"validFrom\":1799999990000,\"validUntil\":1800000060000,\"verified\":true},\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2200,
+          "matched": [
+            "beef"
+          ],
+          "coupon": "held"
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [
+            "fruit"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "held-coupon",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 2500,
+      "likedCount": 2,
+      "candidateCount": 6,
+      "eligibleQuoteCount": 6,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2400,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":{\"applicable\":true,\"code\":\"held-fixture\",\"contextKey\":\"{\\\"fulfillment\\\":\\\"pickup\\\",\\\"mode\\\":\\\"demo\\\",\\\"needTableware\\\":false,\\\"revision\\\":1,\\\"storeRef\\\":\\\"controlled-store\\\",\\\"takeWay\\\":\\\"take-in-store\\\"}\",\"owned\":true,\"productRefs\":[\"beef\"],\"ref\":\"held\",\"source\":\"demo\",\"validFrom\":1799999990000,\"validUntil\":1800000060000,\"verified\":true},\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2400,
+          "matched": [
+            "beef",
+            "fruit"
+          ],
+          "coupon": "held"
+        },
+        {
+          "id": "{\"coupon\":{\"applicable\":true,\"code\":\"held-fixture\",\"contextKey\":\"{\\\"fulfillment\\\":\\\"pickup\\\",\\\"mode\\\":\\\"demo\\\",\\\"needTableware\\\":false,\\\"revision\\\":1,\\\"storeRef\\\":\\\"controlled-store\\\",\\\"takeWay\\\":\\\"take-in-store\\\"}\",\"owned\":true,\"productRefs\":[\"beef\"],\"ref\":\"held\",\"source\":\"demo\",\"validFrom\":1799999990000,\"validUntil\":1800000060000,\"verified\":true},\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2200,
+          "matched": [
+            "beef"
+          ],
+          "coupon": "held"
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [
+            "fruit"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "coupon-enables-budget",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 2200,
+      "likedCount": 2,
+      "candidateCount": 6,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 1,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 1,
+      "verifiableCount": 1,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "coupon-enables-budget",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 2200,
+      "likedCount": 2,
+      "candidateCount": 6,
+      "eligibleQuoteCount": 6,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":{\"applicable\":true,\"code\":\"held-fixture\",\"contextKey\":\"{\\\"fulfillment\\\":\\\"pickup\\\",\\\"mode\\\":\\\"demo\\\",\\\"needTableware\\\":false,\\\"revision\\\":1,\\\"storeRef\\\":\\\"controlled-store\\\",\\\"takeWay\\\":\\\"take-in-store\\\"}\",\"owned\":true,\"productRefs\":[\"beef\"],\"ref\":\"held\",\"source\":\"demo\",\"validFrom\":1799999990000,\"validUntil\":1800000060000,\"verified\":true},\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2200,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": "held"
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "coupon-enables-budget",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 2200,
+      "likedCount": 2,
+      "candidateCount": 6,
+      "eligibleQuoteCount": 6,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2200,
+      "top1Match": 1,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":{\"applicable\":true,\"code\":\"held-fixture\",\"contextKey\":\"{\\\"fulfillment\\\":\\\"pickup\\\",\\\"mode\\\":\\\"demo\\\",\\\"needTableware\\\":false,\\\"revision\\\":1,\\\"storeRef\\\":\\\"controlled-store\\\",\\\"takeWay\\\":\\\"take-in-store\\\"}\",\"owned\":true,\"productRefs\":[\"beef\"],\"ref\":\"held\",\"source\":\"demo\",\"validFrom\":1799999990000,\"validUntil\":1800000060000,\"verified\":true},\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2200,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": "held"
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "expired-coupon",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "expired-coupon",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "expired-coupon",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "inapplicable-coupon",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "inapplicable-coupon",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "inapplicable-coupon",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "unverified-coupon-price",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 6,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "unverified-coupon-price",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 6,
+      "eligibleQuoteCount": 6,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "unverified-coupon-price",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 6,
+      "eligibleQuoteCount": 6,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "stockout",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "stockout",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "stockout",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "unknown-classification",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "unknown-classification",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "unknown-classification",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 2,
+      "eligibleQuoteCount": 2,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.75,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "delivery-over-budget",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 2500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "all-trusted-options-over-budget",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "delivery-over-budget",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 2500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "all-trusted-options-over-budget",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "delivery-over-budget",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 2500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 1,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 1,
+      "verifiableCount": 1,
+      "noResultReason": "all-trusted-options-over-budget",
+      "defaults": [],
+      "overBudget": {
+        "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+        "amountFen": 3200,
+        "overBudgetFen": 700
+      }
+    },
+    {
+      "caseId": "delivery-available",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2700,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2700,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2900,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 3200,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "delivery-available",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2700,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2700,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2900,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 3200,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "delivery-available",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 3200,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 3200,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2700,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 3400,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "required-snack",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2700,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"snack\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2700,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"snack\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2900,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"snack\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 3200,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "required-snack",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2700,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"snack\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2700,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"snack\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2900,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"snack\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 3200,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "required-snack",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3500,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 3200,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"snack\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 3200,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"snack\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2700,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"snack\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 3400,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "all-quotes-fail",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "quotes-failed-unknown-or-expired",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "all-quotes-fail",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "quotes-failed-unknown-or-expired",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "all-quotes-fail",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "quotes-failed-unknown-or-expired",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "partial-quotes-fail",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "partial-quotes-fail",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "partial-quotes-fail",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "incomplete-fees",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "quotes-failed-unknown-or-expired",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "incomplete-fees",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "quotes-failed-unknown-or-expired",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "incomplete-fees",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "quotes-failed-unknown-or-expired",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "stale-binding",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "quotes-failed-unknown-or-expired",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "stale-binding",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "quotes-failed-unknown-or-expired",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "stale-binding",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 0,
+      "overCount": 0,
+      "top1Fen": null,
+      "top1Match": 0,
+      "averageMatch": 0,
+      "top3Coverage": 0,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 0,
+      "verifiableCount": 0,
+      "noResultReason": "quotes-failed-unknown-or-expired",
+      "defaults": [],
+      "overBudget": null
+    },
+    {
+      "caseId": "out-of-order",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "out-of-order",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.5,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "out-of-order",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 2,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef",
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "equal-preference-price",
+      "source": "controlled",
+      "method": "A",
+      "budgetFen": 3000,
+      "likedCount": 1,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0,
+      "averageMatch": 0.3333333333333333,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "equal-preference-price",
+      "source": "controlled",
+      "method": "B",
+      "budgetFen": 3000,
+      "likedCount": 1,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0,
+      "averageMatch": 0.3333333333333333,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "equal-preference-price",
+      "source": "controlled",
+      "method": "McTiming",
+      "budgetFen": 3000,
+      "likedCount": 1,
+      "candidateCount": 4,
+      "eligibleQuoteCount": 4,
+      "defaultCount": 3,
+      "overCount": 0,
+      "top1Fen": 2600,
+      "top1Match": 1,
+      "averageMatch": 0.6666666666666666,
+      "top3Coverage": 1,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2600,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"beef\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"fruit\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2800,
+          "matched": [
+            "beef"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"chicken\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"sugar-free\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "existing-demo",
+      "source": "demo-adapter",
+      "method": "A",
+      "budgetFen": 2500,
+      "likedCount": 2,
+      "candidateCount": 8,
+      "eligibleQuoteCount": 8,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"demo-drink-1\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"demo-main-1\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"demo-drink-2\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"demo-main-1\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "existing-demo",
+      "source": "demo-adapter",
+      "method": "B",
+      "budgetFen": 2500,
+      "likedCount": 2,
+      "candidateCount": 8,
+      "eligibleQuoteCount": 8,
+      "defaultCount": 2,
+      "overCount": 0,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 2,
+      "verifiableCount": 2,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"demo-drink-1\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"demo-main-1\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"demo-drink-2\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"demo-main-1\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": null
+    },
+    {
+      "caseId": "existing-demo",
+      "source": "demo-adapter",
+      "method": "McTiming",
+      "budgetFen": 2500,
+      "likedCount": 2,
+      "candidateCount": 8,
+      "eligibleQuoteCount": 8,
+      "defaultCount": 2,
+      "overCount": 1,
+      "top1Fen": 2100,
+      "top1Match": 0.5,
+      "averageMatch": 0.25,
+      "top3Coverage": 0.5,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "shownCount": 3,
+      "verifiableCount": 3,
+      "noResultReason": null,
+      "defaults": [
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"demo-drink-1\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"demo-main-1\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2100,
+          "matched": [
+            "sugar-free"
+          ],
+          "coupon": null
+        },
+        {
+          "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"demo-drink-2\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"demo-main-1\",\"quantity\":1,\"rounds\":[]}]}",
+          "amountFen": 2300,
+          "matched": [],
+          "coupon": null
+        }
+      ],
+      "overBudget": {
+        "id": "{\"coupon\":null,\"items\":[{\"modifications\":[],\"productRef\":\"demo-drink-1\",\"quantity\":1,\"rounds\":[]},{\"modifications\":[],\"productRef\":\"demo-main-2\",\"quantity\":1,\"rounds\":[]}]}",
+        "amountFen": 2600,
+        "overBudgetFen": 100
+      }
+    }
+  ],
+  "summaries": [
+    {
+      "method": "A",
+      "cases": 32,
+      "withPreferences": 30,
+      "noPreferences": 2,
+      "recommended": 25,
+      "empty": 7,
+      "coverage": 0.78125,
+      "top1Match": 0.38333333333333336,
+      "averageMatch": 0.35000000000000003,
+      "top3Coverage": 0.6333333333333333,
+      "meanFenAvailable": 2204,
+      "pairedCount": 25,
+      "meanFenPaired": 2204,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "verifiableCount": 61,
+      "shownCount": 61,
+      "verifiableRatio": 1
+    },
+    {
+      "method": "B",
+      "cases": 32,
+      "withPreferences": 30,
+      "noPreferences": 2,
+      "recommended": 25,
+      "empty": 7,
+      "coverage": 0.78125,
+      "top1Match": 0.38333333333333336,
+      "averageMatch": 0.3611111111111111,
+      "top3Coverage": 0.6666666666666666,
+      "meanFenAvailable": 2204,
+      "pairedCount": 25,
+      "meanFenPaired": 2204,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "verifiableCount": 63,
+      "shownCount": 63,
+      "verifiableRatio": 1
+    },
+    {
+      "method": "McTiming",
+      "cases": 32,
+      "withPreferences": 30,
+      "noPreferences": 2,
+      "recommended": 25,
+      "empty": 7,
+      "coverage": 0.78125,
+      "top1Match": 0.6833333333333333,
+      "averageMatch": 0.45555555555555544,
+      "top3Coverage": 0.6833333333333333,
+      "meanFenAvailable": 2472,
+      "pairedCount": 25,
+      "meanFenPaired": 2472,
+      "hardViolations": 0,
+      "budgetViolations": 0,
+      "ungroundedPrices": 0,
+      "verifiableCount": 69,
+      "shownCount": 69,
+      "verifiableRatio": 1
+    }
+  ],
+  "differences": [
+    {
+      "caseId": "budget-1500",
+      "A": null,
+      "B": null,
+      "McTiming": null,
+      "mMinusA": null,
+      "mMinusB": null,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "budget-2100",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2100,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "budget-2300",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2100,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "budget-2600",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2600,
+      "mMinusA": 500,
+      "mMinusB": 500,
+      "matchGainA": 0.5,
+      "matchGainB": 0.5
+    },
+    {
+      "caseId": "budget-3000",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2600,
+      "mMinusA": 500,
+      "mMinusB": 500,
+      "matchGainA": 0.5,
+      "matchGainB": 0.5
+    },
+    {
+      "caseId": "budget-3500",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2600,
+      "mMinusA": 500,
+      "mMinusB": 500,
+      "matchGainA": 0.5,
+      "matchGainB": 0.5
+    },
+    {
+      "caseId": "chicken-preference",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2100,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "no-preferences",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2100,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": null,
+      "matchGainB": null
+    },
+    {
+      "caseId": "multiple-preferences",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2800,
+      "mMinusA": 700,
+      "mMinusB": 700,
+      "matchGainA": 1,
+      "matchGainB": 1
+    },
+    {
+      "caseId": "exclude-chicken",
+      "A": 2600,
+      "B": 2600,
+      "McTiming": 2600,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "bundle-exclusion",
+      "A": 2600,
+      "B": 2600,
+      "McTiming": 2600,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "bundle-allowed",
+      "A": 2000,
+      "B": 2000,
+      "McTiming": 2600,
+      "mMinusA": 600,
+      "mMinusB": 600,
+      "matchGainA": 1,
+      "matchGainB": 1
+    },
+    {
+      "caseId": "exact-budget",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2100,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": null,
+      "matchGainB": null
+    },
+    {
+      "caseId": "all-over-budget",
+      "A": null,
+      "B": null,
+      "McTiming": null,
+      "mMinusA": null,
+      "mMinusB": null,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "no-valid",
+      "A": null,
+      "B": null,
+      "McTiming": null,
+      "mMinusA": null,
+      "mMinusB": null,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "held-coupon",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2400,
+      "mMinusA": 300,
+      "mMinusB": 300,
+      "matchGainA": 1,
+      "matchGainB": 1
+    },
+    {
+      "caseId": "coupon-enables-budget",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2200,
+      "mMinusA": 100,
+      "mMinusB": 100,
+      "matchGainA": 0.5,
+      "matchGainB": 0.5
+    },
+    {
+      "caseId": "expired-coupon",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2600,
+      "mMinusA": 500,
+      "mMinusB": 500,
+      "matchGainA": 0.5,
+      "matchGainB": 0.5
+    },
+    {
+      "caseId": "inapplicable-coupon",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2600,
+      "mMinusA": 500,
+      "mMinusB": 500,
+      "matchGainA": 0.5,
+      "matchGainB": 0.5
+    },
+    {
+      "caseId": "unverified-coupon-price",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2600,
+      "mMinusA": 500,
+      "mMinusB": 500,
+      "matchGainA": 0.5,
+      "matchGainB": 0.5
+    },
+    {
+      "caseId": "stockout",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2100,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "unknown-classification",
+      "A": 2600,
+      "B": 2600,
+      "McTiming": 2600,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "delivery-over-budget",
+      "A": null,
+      "B": null,
+      "McTiming": null,
+      "mMinusA": null,
+      "mMinusB": null,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "delivery-available",
+      "A": 2700,
+      "B": 2700,
+      "McTiming": 3200,
+      "mMinusA": 500,
+      "mMinusB": 500,
+      "matchGainA": 0.5,
+      "matchGainB": 0.5
+    },
+    {
+      "caseId": "required-snack",
+      "A": 2700,
+      "B": 2700,
+      "McTiming": 3200,
+      "mMinusA": 500,
+      "mMinusB": 500,
+      "matchGainA": 0.5,
+      "matchGainB": 0.5
+    },
+    {
+      "caseId": "all-quotes-fail",
+      "A": null,
+      "B": null,
+      "McTiming": null,
+      "mMinusA": null,
+      "mMinusB": null,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "partial-quotes-fail",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2100,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "incomplete-fees",
+      "A": null,
+      "B": null,
+      "McTiming": null,
+      "mMinusA": null,
+      "mMinusB": null,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "stale-binding",
+      "A": null,
+      "B": null,
+      "McTiming": null,
+      "mMinusA": null,
+      "mMinusB": null,
+      "matchGainA": 0,
+      "matchGainB": 0
+    },
+    {
+      "caseId": "out-of-order",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2600,
+      "mMinusA": 500,
+      "mMinusB": 500,
+      "matchGainA": 0.5,
+      "matchGainB": 0.5
+    },
+    {
+      "caseId": "equal-preference-price",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2600,
+      "mMinusA": 500,
+      "mMinusB": 500,
+      "matchGainA": 1,
+      "matchGainB": 1
+    },
+    {
+      "caseId": "existing-demo",
+      "A": 2100,
+      "B": 2100,
+      "McTiming": 2100,
+      "mMinusA": 0,
+      "mMinusB": 0,
+      "matchGainA": 0,
+      "matchGainB": 0
+    }
+  ],
+  "lifecycle": {
+    "caseId": "out-of-order",
+    "source": "controlled",
+    "oldRequest": "superseded",
+    "latestDefaultCount": 0,
+    "invalidatedStatus": "expired",
+    "passed": true
+  },
+  "safety": {
+    "hardViolations": 0,
+    "defaultBudgetViolations": 0,
+    "ungroundedPrices": 0,
+    "networkAttempts": 0
+  }
+}

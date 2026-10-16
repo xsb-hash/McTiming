@@ -1,0 +1,35 @@
+{
+  "source": "CSV-derived numeric assertions + SVG structure check",
+  "numericReconciliation": "passed",
+  "charts": [
+    {
+      "file": "01-preference.svg",
+      "editableTextCount": 26,
+      "sha256": "0ab5a065b6ba18df1c31fea615ef0444a7567538c00fbb58fc56b6a958c3b80f"
+    },
+    {
+      "file": "02-amount.svg",
+      "editableTextCount": 18,
+      "sha256": "c8f2bd9854336eca84ee548b6a97961b34634e855a9a205ebe76555acd13ddad"
+    },
+    {
+      "file": "03-budget-coverage.svg",
+      "editableTextCount": 18,
+      "sha256": "cc37cdb11a46da40768d5e08da41bd694606a8925d292ae2923fa2dcebeacc5b"
+    },
+    {
+      "file": "04-safety-tests.svg",
+      "editableTextCount": 26,
+      "sha256": "971c3669b7fc63530a8c4cff200e5af13a13801f11595ec0961d9a29e0904038"
+    },
+    {
+      "file": "05-latency.svg",
+      "editableTextCount": 23,
+      "sha256": "289f729b7d4a1cc15eb1d6c3c31d0f32f3592793e54e0ca09d3186cd9b2d5e53"
+    }
+  ],
+  "python": "3.10.9",
+  "matplotlib": "3.10.8",
+  "numpy": "1.26.4",
+  "pandas": "2.3.3"
+}

@@ -1,0 +1,51 @@
+{
+  "name": "mctiming",
+  "version": "0.1.0",
+  "license": "MIT",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=24.0.0 <25",
+    "npm": ">=11 <12"
+  },
+  "packageManager": "npm@11.15.0",
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1",
+    "build": "next build",
+    "start": "next start --hostname 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:e2e": "playwright test",
+    "mcp:smoke": "tsx scripts/mcp-smoke.ts",
+    "mcp:validate": "tsx scripts/mcp-validate.ts",
+    "recommend:demo": "tsx scripts/recommend-demo.ts",
+    "check:sensitive": "tsx scripts/check-sensitive.ts",
+    "lint": "eslint .",
+    "experiment:phase6a": "tsx scripts/run-experiments.ts",
+    "test:phase6a-summary": "tsx scripts/summarize-phase6a-tests.ts",
+    "mcp:phase5b": "tsx scripts/mcp-phase5b.ts"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/client": "2.3.1",
+    "next": "16.4.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0",
+    "server-only": "0.0.1",
+    "zod": "4.6.6"
+  },
+  "devDependencies": {
+    "@babel/core": "8.0.7",
+    "@babel/eslint-parser": "8.0.7",
+    "@playwright/test": "1.64.0",
+    "@tailwindcss/postcss": "4.3.3",
+    "@types/node": "24.19.2",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "eslint": "10.12.0",
+    "postcss": "8.5.29",
+    "tailwindcss": "4.3.3",
+    "tsx": "4.23.15",
+    "typescript": "7.0.2",
+    "vitest": "5.0.3"
+  }
+}

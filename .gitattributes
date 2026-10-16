@@ -1,0 +1,2 @@
+# Keep the required contest declaration byte-identical to the official original.
+CONTEST_DECLARATION.md -text

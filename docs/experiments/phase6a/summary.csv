@@ -1,0 +1,4 @@
+"method","cases","withPreferences","noPreferences","recommended","empty","coverage","top1Match","averageMatch","top3Coverage","meanFenAvailable","pairedCount","meanFenPaired","hardViolations","budgetViolations","ungroundedPrices","verifiableCount","shownCount","verifiableRatio"
+"A","32","30","2","25","7","0.78125","0.38333333333333336","0.35000000000000003","0.6333333333333333","2204","25","2204","0","0","0","61","61","1"
+"B","32","30","2","25","7","0.78125","0.38333333333333336","0.3611111111111111","0.6666666666666666","2204","25","2204","0","0","0","63","63","1"
+"McTiming","32","30","2","25","7","0.78125","0.6833333333333333","0.45555555555555544","0.6833333333333333","2472","25","2472","0","0","0","69","69","1"
