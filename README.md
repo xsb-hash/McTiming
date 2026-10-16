@@ -1,5 +1,9 @@
 # McTiming 麦麦时机官
 
+![McTiming麦麦时机官：智能套餐推荐](E:\downloads\McTiming麦麦时机官：智能套餐推荐.png)
+
+
+
 基于麦当劳 MCP 的单人餐预算与口味推荐助手。适合想在一家门店内，按预算挑选主食、饮品和可选小食的人：先排除不能接受的品类，再优先选择更合口味的组合，同等匹配程度下比较价格。
 
 **当前版本：真实 MCP 查询＋独立样例演示。** 已实测官方门店、菜单、套餐详情与无券计价；真实查询金额尚未完成全部费用核验，只供参考，不能进入订单核对。完整推荐与模拟订单流程可在 Demo 中体验。
@@ -21,9 +25,17 @@
 
 ## 产品展示
 
-项目已有4张展示截图，位于 `public/showcase/`；公开前由作者确认画面内容。演示视频由作者补充，本文件不添加不存在的视频地址。
+项目已有4张展示截图，位于 `public/showcase/`；
 
-体验路径：开始推荐 → 选择样例门店 → 设置预算与口味 → 比较搭配 → 核对 → 明确确认模拟订单。也可以修改条件或选择本次不购买。
+体验路径：![checkout](E:\McDonald1\public\showcase\checkout.png)
+
+![home](E:\McDonald1\public\showcase\home.png)
+
+![preferences](E:\McDonald1\public\showcase\preferences.png)
+
+![recommendations](E:\McDonald1\public\showcase\recommendations.png)
+
+开始推荐 → 选择样例门店 → 设置预算与口味 → 比较搭配 → 核对 → 明确确认模拟订单。也可以修改条件或选择本次不购买。
 
 ## 安装与运行
 
