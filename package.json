@@ -23,7 +23,8 @@
     "lint": "eslint .",
     "experiment:phase6a": "tsx scripts/run-experiments.ts",
     "test:phase6a-summary": "tsx scripts/summarize-phase6a-tests.ts",
-    "mcp:phase5b": "tsx scripts/mcp-phase5b.ts"
+    "mcp:phase5b": "tsx scripts/mcp-phase5b.ts",
+    "mcp:live-check": "tsx scripts/live-recommendation-check.ts"
   },
   "dependencies": {
     "@modelcontextprotocol/client": "2.3.1",

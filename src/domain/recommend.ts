@@ -54,11 +54,16 @@ export function generateCandidates(context: DiningContext, request: MealRequest,
   const candidates = [...pool.values()];
   // Interleave inexpensive hints and preference leaders before the quote cap.
   const byHint = [...candidates].sort((a, b) => (a.selectionHintFen ?? Infinity) - (b.selectionHintFen ?? Infinity) || compareId(a.id, b.id));
-  const byPreference = [...candidates].sort((a, b) => b.matchedTags.length - a.matchedTags.length || compareId(a.id, b.id));
+  const byPreference = [...candidates].sort((a, b) => b.matchedTags.length - a.matchedTags.length || (context.mode === "live" ? (a.selectionHintFen ?? Infinity) - (b.selectionHintFen ?? Infinity) : 0) || compareId(a.id, b.id));
+  const family = (candidate: Candidate) => candidate.items.map(item => item.productRef).sort().join("|");
+  const families = new Map<string, Candidate>();
+  for (const candidate of byPreference) if (!families.has(family(candidate))) families.set(family(candidate), candidate);
+  const diverse = [...families.values()];
+  const lists = context.mode === "live" ? [byHint, byPreference, diverse] : [byHint, byPreference];
   const chosen = new Map<string, Candidate>();
   for (let i = 0; i < candidates.length && chosen.size < RECOMMEND_LIMITS.quotes; i++) {
-    for (const list of [byHint, byPreference]) {
-      if (chosen.size < RECOMMEND_LIMITS.quotes) chosen.set(list[i].id, list[i]);
+    for (const list of lists) {
+      if (list[i] && chosen.size < RECOMMEND_LIMITS.quotes) chosen.set(list[i].id, list[i]);
     }
   }
   return { candidates: [...chosen.values()], generated: candidates.length, truncated: !done || explorations.some((e) => e.limited) || candidates.length > chosen.size, rejectedOptions: catalog.options.length - eligible.length };
@@ -81,7 +86,11 @@ export function rankRecommendations(context: DiningContext, request: MealRequest
           const option = catalog.options.find((entry) => candidateId(entry.items, null) === candidateId([item], null));
           return option ? { name: option.name, quantity: item.quantity } : null;
         });
-        references.push({ id: candidate.id, matched: candidate.matchedTags.length, price: { ...(products.every((product) => product !== null) ? { products } : {}), items: candidate.components.map(({ name, quantity }) => ({ name, quantity })), amountFen: quote.totalFen, quotedAt: quote.quotedAt, expiresAt: quote.expiresAt } });
+        const comparable = quote.referenceBasis === "mcd-pickup-price-fen-no-coupon" && !candidate.coupon;
+        references.push({ id: candidate.id, matched: candidate.matchedTags.length, price: { candidateId: candidate.id, ...(products.every((product) => product !== null) ? { products } : {}), items: candidate.components.map(({ name, quantity }) => ({ name, quantity })), amountFen: quote.totalFen, quotedAt: quote.quotedAt, expiresAt: quote.expiresAt,
+          ...(quote.referenceBasis ? { basis: quote.referenceBasis, matchedTags: candidate.matchedTags, missingTags: candidate.missingTags, explanation: "按已确认组成匹配模板；口味按官方商品名称明确词语和标签匹配，未使用优惠券。" } : {}),
+          ...(comparable ? { budgetRelation: quote.totalFen <= request.budgetFen ? "reference-within" as const : "reference-over" as const, budgetDifferenceFen: Math.abs(quote.totalFen - request.budgetFen) } : {}),
+        } });
       }
       return [];
     }
@@ -89,10 +98,14 @@ export function rankRecommendations(context: DiningContext, request: MealRequest
   }).sort((a, b) => b.candidate.matchedTags.length - a.candidate.matchedTags.length || a.quote.totalFen! - b.quote.totalFen! || compareId(a.candidate.id, b.candidate.id));
   const budgetOptions = valid.filter((option) => option.overBudgetFen === 0).slice(0, RECOMMEND_LIMITS.budgetResults);
   const overBudgetOption = valid.find((option) => option.overBudgetFen > 0 && (!budgetOptions.length || option.candidate.matchedTags.length > budgetOptions[0].candidate.matchedTags.length)) ?? null;
-  // Compare all returned reference amounts before truncating; they remain non-purchasable.
-  const referencePrices = references.sort((a, b) => b.matched - a.matched || a.price.amountFen - b.price.amountFen || compareId(a.id, b.id)).slice(0, RECOMMEND_LIMITS.budgetResults).map((entry) => entry.price);
-  return recommendationSchema.parse({ source: sourceFor(context), status: valid.length ? "ready" : "empty", requestKey: requestKey(context, request), budgetOptions, overBudgetOption, rejectedQuotes, referencePrices, claimableHints: catalog.claimableHints, issues: catalog.issues,
-    message: budgetOptions.length ? `仅在本次候选范围内按口味和${context.mode === "demo" ? "演示" : "官方"}金额排序；不代表全店最低价或全局最优。` : "当前候选范围内未找到预算内合适组合，可修改条件或本次不买。",
+  const comparable = references.filter(entry => entry.price.budgetRelation).sort((a, b) => b.matched - a.matched || a.price.amountFen - b.price.amountFen || compareId(a.id, b.id));
+  const within = comparable.filter(entry => entry.price.budgetRelation === "reference-within").slice(0, 3);
+  const above = comparable.find(entry => entry.price.budgetRelation === "reference-over" && (!within.length || entry.matched > within[0].matched));
+  // Unestablished price bases are observations only: never price-sort or compare to budget.
+  const incomparable = references.filter(entry => !entry.price.budgetRelation).sort((a, b) => compareId(a.id, b.id)).slice(0, 3);
+  const referencePrices = [...within, ...(above ? [above] : []), ...incomparable].map(entry => entry.price);
+  return recommendationSchema.parse({ source: sourceFor(context), status: valid.length || referencePrices.some(price => price.budgetRelation) ? "ready" : "empty", requestKey: requestKey(context, request), budgetOptions, overBudgetOption, rejectedQuotes, referencePrices, claimableHints: catalog.claimableHints, couponHints: catalog.couponHints, unavailableItems: catalog.unavailableItems, issues: catalog.issues,
+    message: referencePrices.length ? "官方参考推荐；最终费用以实际结算为准。不保证全店最低价，真实交易未开放。" : budgetOptions.length ? `仅在本次候选范围内按口味和${context.mode === "demo" ? "演示" : "官方"}金额排序；不代表全店最低价或全局最优。` : "当前候选范围内未找到预算内合适组合，可修改条件或本次不买。",
     coverage: { generated: generated.generated, attempted: quoted.length, succeeded: valid.length, rejectedOptions: generated.rejectedOptions, truncated: generated.truncated, scope: "generated-candidates-only" },
   });
 }

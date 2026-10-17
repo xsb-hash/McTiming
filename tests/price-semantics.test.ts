@@ -25,11 +25,11 @@ const rank = (patch: Partial<Quote> = {}) => rankRecommendations(context, reques
 
 describe("price semantics and non-purchasable reference amounts", () => {
   it("uses top-level price in fen, keeps missing fees unknown and does not grant purchase authority", () => {
-    expect(data).toEqual({ price: 3450, productPrice: 3450, discount: 0 });
+    expect(data).toMatchObject({ price: 3450, productPrice: 3450, discount: 0, productList: [{ productCode: candidate.items[0].productRef, quantity: 1 }] });
     const result = rank();
     expect(result.budgetOptions).toEqual([]); expect(result.overBudgetOption).toBeNull();
     expect(result.coverage.succeeded).toBe(0);
-    expect(result.referencePrices).toEqual([{ products: [{ name: option.name, quantity: 1 }], items: candidate.components.map(({ name, quantity }) => ({ name, quantity })), amountFen: 3450, quotedAt: NOW, expiresAt: null }]);
+    expect(result.referencePrices).toEqual([{ candidateId: candidate.id, products: [{ name: option.name, quantity: 1 }], items: candidate.components.map(({ name, quantity }) => ({ name, quantity })), amountFen: 3450, quotedAt: NOW, expiresAt: null }]);
     expect(result.referencePrices[0]).not.toHaveProperty("id");
     expect(result.referencePrices[0]).not.toHaveProperty("fees");
   });

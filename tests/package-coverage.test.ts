@@ -40,7 +40,7 @@ describe("official package coverage", () => {
     expect(generated.candidates).toHaveLength(1);
     const candidate = generated.candidates[0];
     // Artificial quote, not a measured price for this real product.
-    const quote: Quote = { source: "official", status: "unknown", binding: quoteBinding(context, request, candidate), totalFen: 3000, fees: null, quotedAt: NOW, expiresAt: null, reasons: ["受控测试"] };
+    const quote: Quote = { source: "official", status: "unknown", referenceBasis: "mcd-pickup-price-fen-no-coupon", binding: quoteBinding(context, request, candidate), totalFen: 3000, fees: null, quotedAt: NOW, expiresAt: null, reasons: ["受控测试"] };
     const result = rankRecommendations(context, request, catalog, generated, [{ candidate, quote }], NOW);
     expect(result.referencePrices[0]).toMatchObject({ products: [{ name: detail.name, quantity: 1 }] });
     expect(result.budgetOptions).toEqual([]);
@@ -52,7 +52,7 @@ describe("official package coverage", () => {
     const catalog = { ...catalogFor(), options };
     const generated = generateCandidates(context, request, catalog, NOW);
     const amounts = [3450, 2990, 2890, 2690, 2690];
-    const quoted = generated.candidates.map(candidate => ({ candidate, quote: { source: "official", status: "unknown", binding: quoteBinding(context, request, candidate), totalFen: amounts[Number(candidate.items[0].productRef.slice(-1))], fees: null, quotedAt: NOW, expiresAt: null, reasons: ["受控测试"] } as Quote }));
+    const quoted = generated.candidates.map(candidate => ({ candidate, quote: { source: "official", status: "unknown", referenceBasis: "mcd-pickup-price-fen-no-coupon", binding: quoteBinding(context, request, candidate), totalFen: amounts[Number(candidate.items[0].productRef.slice(-1))], fees: null, quotedAt: NOW, expiresAt: null, reasons: ["受控测试"] } as Quote }));
     const run = (entries = quoted) => rankRecommendations(context, request, catalog, generated, entries, NOW);
     expect(run().referencePrices.map(price => price.amountFen)).toEqual([2690, 2690, 2890]);
     expect(run().referencePrices.map(price => price.products?.[0].name)).toEqual(["受控套餐 3", "受控套餐 4", "受控套餐 2"]);
@@ -66,7 +66,7 @@ describe("official package coverage", () => {
     const preferredRequest = { ...request, likedTags: ["controlled-preference"] };
     const catalog = { ...catalogFor(), options };
     const generated = generateCandidates(context, preferredRequest, catalog, NOW);
-    const quoted = generated.candidates.map(candidate => ({ candidate, quote: { source: "official", status: "unknown", binding: quoteBinding(context, preferredRequest, candidate), totalFen: candidate.matchedTags.length ? 3450 : 2690, fees: null, quotedAt: NOW, expiresAt: null, reasons: ["受控测试"] } as Quote }));
+    const quoted = generated.candidates.map(candidate => ({ candidate, quote: { source: "official", status: "unknown", referenceBasis: "mcd-pickup-price-fen-no-coupon", binding: quoteBinding(context, preferredRequest, candidate), totalFen: candidate.matchedTags.length ? 3450 : 2690, fees: null, quotedAt: NOW, expiresAt: null, reasons: ["受控测试"] } as Quote }));
     const result = rankRecommendations(context, preferredRequest, catalog, generated, quoted, NOW);
     expect(result.referencePrices.map(price => price.amountFen)).toEqual([3450, 2690]);
     expect(result.budgetOptions).toEqual([]);

@@ -6,6 +6,9 @@ export function resultNotice(result: ResultView) {
     ? { title: "部分报价未通过核验", description: "以下仅展示通过核验的方案，未通过的方案不能进入核对。" }
     : null;
   if (result.referencePrices.length > 0) return null; // The reference section carries the single explanation.
+  const failure = result.issues.find(issue => /鉴权失败|限流|网络连接失败/.test(issue));
+  if (failure) return { title: "官方查询暂未完成", description: failure };
+  if (result.issues.includes("当前门店没有返回可售菜单。")) return { title: "当前门店没有返回可售菜单", description: "可更换门店或稍后重新查询。" };
   if (result.issues.includes("菜单或优惠数据读取失败，未使用模拟数据替代。"))
     return { title: "本次查询未完成", description: "菜单或优惠数据读取失败，请重试。没有使用样例替代真实数据。" };
   if (result.coverage.succeeded > 0)

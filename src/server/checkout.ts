@@ -5,6 +5,7 @@ import { checkoutContents, checkoutDraftSchema, checkoutSnapshotSchema, confirmC
 
 export type RecheckResult = { status: "blocked"; reason: string } | { status: "verified"; snapshot: CheckoutSnapshot };
 export interface CheckoutAdapter {
+  readonly kind?: "reference-simulation";
   recheck(snapshot: CheckoutSnapshot, scenario: DemoScenario): Promise<RecheckResult>;
   create(snapshot: CheckoutSnapshot, scenario: DemoScenario): Promise<{ status: "created"; order: DemoOrder } | { status: "failed" } | { status: "unknown" }>;
   query(order: DemoOrder): Promise<DemoOrder>;
@@ -12,6 +13,9 @@ export interface CheckoutAdapter {
 export class CheckoutError extends Error {}
 
 export function createCheckout({ sessionId, mode, adapter, now = Date.now }: { sessionId: string; mode: "demo" | "live"; adapter: CheckoutAdapter; now?: () => number }) {
+  const referenceSimulation = mode === "live" && adapter.kind === "reference-simulation";
+  // Local simulation freshness limit, not an official quote validity guarantee.
+  const referenceLifetime = 5 * 60_000;
   let draft: CheckoutDraft | null = null;
   let generation = 0;
   const transitions: Record<CheckoutDraft["state"], CheckoutDraft["state"][]> = {
@@ -38,6 +42,7 @@ export function createCheckout({ sessionId, mode, adapter, now = Date.now }: { s
   }
   function trusted(snapshot: CheckoutSnapshot) {
     const { context, request, candidate, quote } = snapshot;
+    if (referenceSimulation) return context.mode === "live" && context.fulfillment === "pickup" && candidate.contextKey === contextKey(context) && candidate.id === candidateId(candidate.items, null) && !candidate.coupon && candidate.source === "official" && quote.source === "official" && quote.status === "unknown" && quote.referenceBasis === "mcd-pickup-price-fen-no-coupon" && quote.totalFen !== null && quoteIsCurrent(quote, context, request, candidate, now()) && now() < quote.quotedAt + referenceLifetime && hardConditions(candidate.components, request);
     return context.mode === mode && candidate.contextKey === contextKey(context) && candidate.id === candidateId(candidate.items, candidate.coupon) && quote.source === (mode === "demo" ? "demo" : "official") && candidate.source === quote.source && quote.status === (mode === "demo" ? "demo" : "verified") && quote.totalFen !== null && quote.fees !== null && quoteIsCurrent(quote, context, request, candidate, now()) && hardConditions(candidate.components, request) && (!candidate.coupon || couponUsable(candidate.coupon, context, now()));
   }
   function identify(id: string, version: number) {
@@ -54,7 +59,7 @@ export function createCheckout({ sessionId, mode, adapter, now = Date.now }: { s
       if (!trusted(snapshot)) throw new CheckoutError("缺少可信完整报价，不能准备订单。");
       if (draft?.valid && checkoutContents(draft.snapshot) === checkoutContents(snapshot) && !["failed", "blocked", "cancelled", "invalidated"].includes(draft.state)) return read()!;
       generation++;
-      draft = checkoutDraftSchema.parse({ id: randomUUID(), sessionId, version: 1, snapshot, state: "awaiting-confirmation", scenario: "normal", valid: true, expiresAt: now() + 30 * 60_000, previousTotalFen: null, changes: [], message: "请核对金额与履约信息，明确确认后才执行模拟创建。", order: null });
+      draft = checkoutDraftSchema.parse({ id: randomUUID(), sessionId, version: 1, snapshot, state: "awaiting-confirmation", scenario: "normal", valid: true, expiresAt: referenceSimulation ? Math.min(snapshot.quote.quotedAt + referenceLifetime, snapshot.quote.expiresAt ?? Infinity) : now() + 30 * 60_000, previousTotalFen: null, changes: [], message: referenceSimulation ? "模拟订单：请核对餐品和门店。官方查询参考价不等于最终应付金额，不会付款或通知门店。" : "请核对金额与履约信息，明确确认后才执行模拟创建。", order: null });
       return read()!;
     },
     setScenario(id: string, version: number, scenario: DemoScenario) {
@@ -69,9 +74,9 @@ export function createCheckout({ sessionId, mode, adapter, now = Date.now }: { s
       if (["rechecking", "creating", "created", "unknown", "failed", "blocked"].includes(current.state)) return read()!;
       if (!current.valid) throw new CheckoutError("草稿已失效，不能提交。");
       if (current.snapshot.context.fulfillment === "delivery" && !args.addressConfirmed) throw new CheckoutError("请先明确确认本次虚构配送地址。");
-      if (mode !== "demo") { transition("blocked", "真实创建未授权，完整费用和金额约束尚未验证。Token 不会开放交易。"); return read()!; }
+      if (mode !== "demo" && !referenceSimulation) { transition("blocked", "真实创建未授权，完整费用和金额约束尚未验证。Token 不会开放交易。"); return read()!; }
       if (!trusted(current.snapshot)) { transition("blocked", "报价已过期、优惠失效或费用不完整，请重新推荐。"); return read()!; }
-      transition("rechecking", "正在复核门店、履约、餐品配置、优惠和完整费用。");
+      transition("rechecking", referenceSimulation ? "正在检查模拟草稿的来源、配置与有效期；不进行真实结算。" : "正在复核门店、履约、餐品配置、优惠和完整费用。");
       const own = generation;
       let checked: RecheckResult;
       try { checked = await adapter.recheck(structuredClone(current.snapshot), current.scenario); }
@@ -107,7 +112,7 @@ export function createCheckout({ sessionId, mode, adapter, now = Date.now }: { s
     },
     async query(id: string, version: number) {
       const current = identify(id, version);
-      if (mode !== "demo" || !current.order) return read()!;
+      if ((mode !== "demo" && !referenceSimulation) || !current.order) return read()!;
       try {
         const order = demoOrderSchema.parse(await adapter.query(structuredClone(current.order)));
         if (order.id !== current.order.id) throw new Error("Order mismatch");
@@ -123,9 +128,9 @@ export function createCheckout({ sessionId, mode, adapter, now = Date.now }: { s
   };
 }
 
-export function checkoutView(draft: CheckoutDraft): CheckoutView {
+export function checkoutView(draft: CheckoutDraft, referenceSimulation = false): CheckoutView {
   const name = (ref: string) => draft.snapshot.candidate.components.find((part) => part.productRef === ref)?.name ?? "套餐商品（名称未提供）";
-  return { id: draft.id, version: draft.version, state: draft.state, scenario: draft.scenario, valid: draft.valid, previousTotalFen: draft.previousTotalFen, changes: draft.changes, message: draft.message, order: draft.order, totalFen: draft.snapshot.quote.totalFen, quotedAt: draft.snapshot.quote.quotedAt, quoteStatus: draft.snapshot.quote.status, expiresAt: draft.expiresAt,
+  return { id: draft.id, version: draft.version, state: draft.state, scenario: draft.scenario, valid: draft.valid, previousTotalFen: draft.previousTotalFen, changes: draft.changes, message: draft.message, order: draft.order, totalFen: draft.snapshot.quote.totalFen, quotedAt: draft.snapshot.quote.quotedAt, quoteStatus: draft.snapshot.quote.status, expiresAt: draft.expiresAt, referenceSimulation,
     specifications: draft.snapshot.candidate.items.flatMap((item) => [
       `${name(item.productRef)} × ${item.quantity}${item.modifications.length ? `；特制配置：${item.modifications.map((mod) => `${mod.code}/${mod.key} × ${mod.quantity}`).join("、")}` : "；默认规格"}`,
       ...item.rounds.map((round) => `套餐选项：${round.choices.map((choice) => `${name(choice.productRef)} × ${choice.quantity}${choice.modifications.length ? `（配置 ${choice.modifications.map((mod) => `${mod.code}/${mod.key} × ${mod.quantity}`).join("、")}）` : ""}`).join("、")}`),

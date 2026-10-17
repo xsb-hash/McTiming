@@ -225,7 +225,7 @@ details > p, details > ul { margin: 0 0 12px; }
 .coupon-list { list-style: none; padding: 0; margin: 8px 0; }
 .coupon-list li { display: flex; justify-content: space-between; align-items: start; gap: 16px; padding: 10px 0; border-bottom: 1px solid #e8e8df; overflow-wrap: anywhere; }
 .coupon-status { flex-shrink: 0; font-size: 12px; color: #59613e; background: #eeefdf; border-radius: 4px; padding: 2px 8px; }
-.reference-section > p { color: #6f4f28; font-size: 14px; }
+.reference-section section > p { color: #6f4f28; font-size: 14px; }
 .reference-section article { display: flex; justify-content: space-between; gap: 20px; padding: 20px 0; border-bottom: 1px solid #dedfd4; }
 .reference-section article > div:last-child { flex-shrink: 0; text-align: right; }
 .reference-section h3 { font-size: 17px; }
@@ -263,3 +263,8 @@ details > p, details > ul { margin: 0 0 12px; }
 .meal-description .preference-summary { margin-top: 12px; }
 .food-photo figcaption span { display: inline-block; }
 .recommend-card .quote-details { margin-top: 0; }
+
+.reference-section section + section { margin-top: 28px; }
+.reference-section article > div:first-child { min-width: 0; overflow-wrap: anywhere; }
+.reference-section article > div:last-child > span { display: block; }
+.reference-section article .button { margin-top: 12px; }

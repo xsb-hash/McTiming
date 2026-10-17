@@ -29,6 +29,7 @@ export const checkoutDraftSchema = z.object({
 export type CheckoutDraft = z.infer<typeof checkoutDraftSchema>;
 export type CheckoutView = Pick<CheckoutDraft, "id" | "version" | "state" | "scenario" | "valid" | "previousTotalFen" | "changes" | "message" | "order"> & {
   totalFen: number | null; quotedAt: number; quoteStatus: string; expiresAt: number; specifications: string[];
+  referenceSimulation?: boolean;
 };
 export const confirmCheckoutSchema = z.object({ draftId: z.string().uuid(), version: z.number().int().positive(), confirmed: z.literal(true), addressConfirmed: z.boolean().default(false) }).strict();
 

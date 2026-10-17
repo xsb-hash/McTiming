@@ -29,6 +29,7 @@ export const actionSchema = z.discriminatedUnion("action", [
   z.object({ action: z.literal("stores"), revision, fulfillment: z.enum(["pickup", "delivery"]), city: z.string().trim().min(1).max(50), keyword: z.string().trim().min(1).max(100), addressRef: z.string().max(200) }).strict(),
   z.object({ action: z.literal("recommend"), revision, form: formSchema }).strict(),
   z.object({ action: z.literal("review"), revision, optionId: z.string().uuid() }).strict(),
+  z.object({ action: z.literal("review-simulation"), revision, optionId: z.string().uuid() }).strict(),
   z.object({ action: z.literal("abstain"), revision }).strict(),
   z.object({ action: z.literal("checkout-confirm"), revision, draftId: z.string().uuid(), version: revision, confirmed: z.literal(true), addressConfirmed: z.boolean().default(false) }).strict(),
   z.object({ action: z.literal("checkout-status"), revision, draftId: z.string().uuid(), version: revision }).strict(),
@@ -38,7 +39,9 @@ export const actionSchema = z.discriminatedUnion("action", [
 export type WorkflowAction = z.infer<typeof actionSchema>;
 export type StoreView = { ref: string; name: string; address: string; available: boolean; hours: string; reservations: string[] };
 export type OptionView = { id: string; items: { name: string; quantity: number; role: string }[]; matched: string[]; missing: string[]; totalFen: number; fees: NonNullable<Quote["fees"]>; overBudgetFen: number; source: "demo" | "official"; status: "demo" | "verified"; quotedAt: number; explanation: string; coupon: string };
-export type ResultView = { budgetOptions: OptionView[]; overBudgetOption: OptionView | null; referencePrices: Recommendation["referencePrices"]; message: string; issues: string[]; claimableHints: string[]; coverage: Recommendation["coverage"]; rejectedCount: number };
-export type DraftView = { id: string; revision: number; option: OptionView; store: StoreView; form: MealForm; deliveryAddress: string | null; transactionEnabled: false; checkout?: CheckoutView };
+export type ReferenceView = Omit<Recommendation["referencePrices"][number], "candidateId"> & { simulationId?: string };
+export type ReferenceOptionView = Omit<OptionView, "fees" | "status"> & { fees: null; status: "reference"; products: { name: string; quantity: number }[] };
+export type ResultView = { budgetOptions: OptionView[]; overBudgetOption: OptionView | null; referencePrices: ReferenceView[]; couponHints?: Recommendation["couponHints"]; unavailableItems?: Recommendation["unavailableItems"]; failedQuoteCount?: number; message: string; issues: string[]; claimableHints: string[]; coverage: Recommendation["coverage"]; rejectedCount: number };
+export type DraftView = { id: string; revision: number; option: OptionView | ReferenceOptionView; store: StoreView; form: MealForm; deliveryAddress: string | null; transactionEnabled: false; checkout?: CheckoutView };
 export type WorkflowView = { revision: number; stores: StoreView[]; form: MealForm | null; result: ResultView | null; draft: DraftView | null };
 export const demoAddress = "样例城市 · 春日路 100 号演示楼（虚构地址）";

@@ -36,9 +36,12 @@ export const couponSchema = z.object({
   owned: z.boolean(), applicable: z.boolean(), verified: z.boolean(),
   validFrom: z.number().int(), validUntil: z.number().int(),
 }).strict().refine((v) => v.validUntil > v.validFrom);
+export const couponHintSchema = z.object({ name: ref, status: z.enum(["已持有", "可领取", "适用性未验证", "本单适用"]), conditions: z.array(z.string()) }).strict();
+const unavailableItemSchema = z.object({ name: ref, reason: z.string() }).strict();
 export const catalogSchema = z.object({
   source: sourceSchema, options: z.array(menuOptionSchema).max(500), coupons: z.array(couponSchema).max(200),
   claimableHints: z.array(z.string()), issues: z.array(z.string()),
+  couponHints: z.array(couponHintSchema).optional(), unavailableItems: z.array(unavailableItemSchema).optional(),
 }).strict();
 export const candidateSchema = z.object({
   id: z.string(), contextKey: z.string(), source: sourceSchema,
@@ -51,6 +54,8 @@ export const quoteSchema = z.object({
   source: sourceSchema, status: z.enum(["verified", "demo", "unknown", "failed", "expired"]),
   binding: z.string(), totalFen: fenSchema.nullable(), fees: feesSchema.nullable(),
   quotedAt: z.number().int(), expiresAt: z.number().int().nullable(), reasons: z.array(z.string()),
+  // Internal evidence label, not an official field. Only the adapter can supply it.
+  referenceBasis: ref.optional(),
 }).strict().superRefine((v, ctx) => {
   if (["verified", "demo"].includes(v.status) && (v.totalFen === null || v.fees === null || (v.status === "verified" ? v.source !== "official" : v.source !== "demo"))) {
     ctx.addIssue({ code: "custom", message: "可信报价必须有对应来源、完整金额和费用。" });
@@ -60,13 +65,18 @@ export const quoteSchema = z.object({
   }
 });
 export const rankedOptionSchema = z.object({ candidate: candidateSchema, quote: quoteSchema, overBudgetFen: fenSchema, purchasable: z.boolean(), explanation: z.string() }).strict();
-// Reference observations have no choice ID or purchase authority.
-export const referencePriceSchema = z.object({ products: z.array(z.object({ name: ref, quantity: z.number().int().positive() })).min(1).optional(), items: z.array(z.object({ name: ref, quantity: z.number().int().positive() })), amountFen: fenSchema, quotedAt: z.number().int(), expiresAt: z.number().int().nullable() }).strict();
+// Internal candidate identity is stripped from the browser view; no purchase authority.
+export const referencePriceSchema = z.object({ products: z.array(z.object({ name: ref, quantity: z.number().int().positive() })).min(1).optional(), items: z.array(z.object({ name: ref, quantity: z.number().int().positive() })), amountFen: fenSchema, quotedAt: z.number().int(), expiresAt: z.number().int().nullable(),
+  candidateId: z.string().optional(),
+  basis: ref.optional(), matchedTags: z.array(ref).optional(), missingTags: z.array(ref).optional(),
+  budgetRelation: z.enum(["reference-within", "reference-over"]).optional(), budgetDifferenceFen: fenSchema.optional(), explanation: z.string().optional(),
+}).strict();
 export const recommendationSchema = z.object({
   source: sourceSchema, status: z.enum(["ready", "empty", "expired"]), requestKey: z.string(),
   budgetOptions: z.array(rankedOptionSchema).max(3), overBudgetOption: rankedOptionSchema.nullable(),
   rejectedQuotes: z.array(z.object({ candidateId: z.string(), quote: quoteSchema })),
-  referencePrices: z.array(referencePriceSchema).max(3).default([]),
+  referencePrices: z.array(referencePriceSchema).max(12).default([]),
+  couponHints: z.array(couponHintSchema).optional(), unavailableItems: z.array(unavailableItemSchema).optional(),
   claimableHints: z.array(z.string()), issues: z.array(z.string()), message: z.string(),
   coverage: z.object({ generated: z.number().int().nonnegative(), attempted: z.number().int().nonnegative(), succeeded: z.number().int().nonnegative(), rejectedOptions: z.number().int().nonnegative(), truncated: z.boolean(), scope: z.literal("generated-candidates-only") }),
 }).strict();

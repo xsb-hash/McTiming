@@ -36,7 +36,7 @@ test("home, pickup, independent over-budget option, review and decline; desktop 
   await generate(page);
   await expect(page.getByTestId("budget-option")).toHaveCount(2);
   await expect(page.getByTestId("budget-option").first()).toContainText("¥21.00");
-  await expect(page.getByTestId("budget-option").first()).toContainText("未满足：牛肉");
+  await expect(page.getByTestId("budget-option").first()).toContainText("更想要牛肉？可以看看其他搭配。");
   await expect(page.getByTestId("over-option")).toHaveCount(1);
   await expect(page.getByTestId("over-option")).toContainText("超出预算 ¥1.00");
   await capture(page, "04-results-desktop");
@@ -82,7 +82,7 @@ test("budget validation and preference conflicts", async ({ page }) => {
 test("likes outrank cheaper food and exclusion applies to all displayed options", async ({ page }) => {
   await preferences(page); await page.getByLabel("单人餐预算（元）").fill("35"); await generate(page);
   await expect(page.getByTestId("budget-option").first()).toContainText("样例牛肉主食");
-  await expect(page.getByTestId("budget-option").first()).toContainText("匹配 2 项喜欢");
+  await expect(page.getByTestId("budget-option").first()).toContainText("口味：牛肉、无糖饮品");
   await page.getByRole("button", { name: "修改条件" }).click();
   await page.getByLabel("喜欢牛肉", { exact: true }).uncheck();
   await page.getByLabel("排除牛肉", { exact: true }).check(); await generate(page);
@@ -140,11 +140,14 @@ test("live missing credentials fails explicitly, delivery and real ordering stay
   await expect(page.getByText(/真实外送暂未开放/)).toBeVisible();
 });
 test("canary never reaches live HTML or browser JS; no automatic MCP call", async ({ page, request }) => {
+  const actions: string[] = [];
+  page.on("request", value => { if (value.url().endsWith("/api/workflow")) actions.push(value.postDataJSON().action); });
   const response = await page.goto("http://127.0.0.1:3301/recommend");
   expect(await response!.text()).not.toContain("mctiming-test-secret-canary");
-  await expect(page.getByText("配置存在不等于本次连接成功。", { exact: false })).toBeVisible();
+  await expect(page.getByText("真实餐品 · 模拟订单", { exact: true })).toBeVisible();
   const scripts = await page.locator("script[src]").evaluateAll((elements) => elements.map((el) => (el as HTMLScriptElement).src));
   for (const src of scripts) { const js = await (await request.get(src)).text(); expect(js).not.toContain("mctiming-test-secret-canary"); expect(js).not.toContain("MCD_MCP_TOKEN"); }
+  expect(actions.every(action => action === "bootstrap")).toBe(true);
 });
 test("API rejects cross-site access and unsupported transaction actions", async ({ request }) => {
   const forbidden = await request.post(`${demo}/api/workflow`, { data: { action: "bootstrap" }, headers: { Origin: "https://evil.invalid" } });
